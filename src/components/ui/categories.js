@@ -19,9 +19,9 @@ const Categories = () => {
         <div className={styles.leftSide}>
           <div className={styles.leftSideLaptop} onClick={() => navigate.push("/allProduct/Laptops")}>
             <div className={styles.img}>
-              <Image unoptimized='true' src="/notebook.png" width={350} height={290} />
+              <img unoptimized='true' src="/notebook.png" className={styles.notebookImg} />
             </div>
-            <div className={styles.laptopDesc}>
+            <div className={styles.laptopDescBlock}>
               <p className={styles.laptopName}>Laptops</p>
               <p className={styles.laptopDesc}>
                 True Laptop <br />
@@ -31,36 +31,39 @@ const Categories = () => {
           </div>
           <div className={styles.leftSideWatch} onClick={() => navigate.push("//allProduct/Watches")}>
             <div className={styles.watchImg}>
-              <Image unoptimized='true' src="/watch.png" width={250} height={200} />
+              <img unoptimized='true' src="/watch.png"className={styles.watchImgimg}/>
             </div>
             <div className={styles.watchText}>
               <p className={styles.watchName}>Watch</p>
-              <p className={styles.laptopDesc}>
+              <p className={styles.watchDesc}>
                 Not just <br />
                 stylisht
               </p>
             </div>
           </div>
         </div>
+
+
         <div className={styles.rightSide}>
           <div className={styles.rigthPhoneSide} onClick={() => navigate.push("//allProduct/Phones")}>
             <div className={styles.rigthPhoneImg}>
-              <Image unoptimized='true' src="/twoPhons.png" width={250} height={200} />
+              <img unoptimized='true' src="/twoPhons.png" className={styles.twoPhonesImg} />
             </div>
             <div className={styles.rigthPhoneText}>
               <p className={styles.rigthPhoneText1}>Phones</p>
-              <p className={styles.laptopDesc}>
+              <p className={styles.phoneDesc}>
                 Your day to day <br /> life
               </p>
             </div>
           </div>
+
           <div className={styles.ipadSide} onClick={() => navigate.push("/allProduct/Ipads")}>
-            <div>
+            <div className={styles.ipadTextBlock}>
               <p className={styles.ipadText1}>Tablet</p>
-              <p className={styles.laptopDesc}>Empower your <br /> work</p>
+              <p className={styles.IpadDesc}>Empower your <br /> work</p>
             </div>
-            <div>
-              <Image unoptimized='true' src="/ipadd.png" width={250} height={200} />
+            <div className={styles.ipadImgBlock}>
+              <img unoptimized='true' src="/ipadd.png" className={styles.ipadImg}   />
             </div>
           </div>
         </div>

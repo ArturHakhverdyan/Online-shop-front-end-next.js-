@@ -65,6 +65,10 @@
   width: 100%;
   height: 100%;
 }
+.seeAll{
+  width: 15px;
+  height: 15px;
+}
 
 
 @media only screen and (max-width:1140px) {
@@ -74,4 +78,49 @@
    .ideaImg img{
     width: 80%;
    }
+} 
+@media only screen and (max-width:400px) {
+.wrapper{
+  height: auto;
+}
+.imgAndInfo{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 400px;
+}
+.text1{
+  font-size: 80px;
+}
+.text2{
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 80px;
+}
+.imgAndInfo{
+  height: 1500px;
+}
+.ideaImg{
+  height: 70%;
+  width: 100%;
+}
+.ideaImg img{
+  height: 100%;
+  width: 100%;
+}
+.ideaText p{
+  font-size: 50px;
+  line-height: 70px;
+}
+.moreInfo{
+height: 300px;
+}
+.moreInfo span{
+  font-size: 80px;
+}
+.seeAll{
+  width: 100px;
+  height: 100px;
+}
 } 

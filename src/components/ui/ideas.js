@@ -23,7 +23,7 @@ const IdeasPart = () => {
       </div>
       <div className={styles.moreInfo}>
         <span>See All</span>
-        <Image unoptimized='true' src="/arrow.png" width={15} height={15} />
+        <img unoptimized='true' src="/arrow.png" className={styles.seeAll} />
       </div>
     </div>
   );

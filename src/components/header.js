@@ -13,11 +13,11 @@ const Header = () => {
       <div className={styles.img}>
         <Link href="/">
           <a>
-            <Image
+            <img
+              className={styles.countryImg}
               unoptimized="true"
               src="/country.png"
-              width={170}
-              height={20}
+              
             />
           </a>
         </Link>
@@ -26,15 +26,15 @@ const Header = () => {
       <Navbar />
       <div className={styles.tools}>
         <a href="/#1" title="Вернуться к началу">
-          <Image unoptimized="true" src="/search.png" width={35} height={30} />
+          <img className={styles.searchImg}  unoptimized="true" src="/search.png"  />
         </a>
 
         <Link href="/basket">
           <a>
-            <Image
+            <img 
+            className={styles.basketImg}
               src="/basket.png"
-              width={30}
-              height={30}
+              
               style={{ cursor: "pointer" }}
             />
           </a>

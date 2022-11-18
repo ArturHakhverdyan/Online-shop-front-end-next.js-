@@ -61,8 +61,8 @@ const ChangePasswordModal = () => {
     return (
         <div className={styles.modalWrapper}>
             <p onClick={toggle} className={styles.changeText}> Change Password  </p>
-            <Modal isOpen={modal} toggle={toggle} >
-                <ModalHeader toggle={toggle} > Change Password </ModalHeader>
+            <Modal isOpen={modal} toggle={toggle} className={styles.modal}>
+                <ModalHeader toggle={toggle} className={styles.ModalHeader}> <p>Change Password </p></ModalHeader>
                 <ModalBody className={styles.modalBody}>
                     <div >
                         {succes && <p style={{ color: "green", }}>Success</p>}

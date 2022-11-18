@@ -10,8 +10,8 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.info}>
         <div className={styles.infoLeftSide}>
-          <div>
-            <Image unoptimized='true' src="/country.png" width={170} height={20} />
+          <div className={styles.informSide}>
+            <img unoptimized='true' src="/country.png" className={styles.country}  />
             <p className={styles.footerText}>
               Sign up for texts to be notified about <br /> our best offers on the
               perfect gifts.
@@ -24,7 +24,7 @@ const Footer = () => {
               <li className={styles.title}>{item.title}</li>
               {item.childrens.map((i,index) => (
                 <Link href={i.path} key= {index} >
-                <li key={i.id}>{i.name}</li>
+                <li key={i.id} className={styles.li}>{i.name}</li>
                 </Link>
               ))
             }
@@ -37,13 +37,13 @@ const Footer = () => {
           <span>
             <strong>Made BY :</strong> Azwedo {""}
           </span>
-          <Image unoptimized='true' src="/arrow.png" width={12} height={12} />
+          <img unoptimized='true' src="/arrow.png"  className={styles.footImg1}  />
         </div>
         <div>
           <span>
             <strong>Powered by :</strong> Webflow {""}
           </span>
-          <Image unoptimized='true' src="/arrow.png" width={12} height={12} />
+          <img unoptimized='true' src="/arrow.png" className={styles.footImg1}  />
         </div>
       </div>
     </div>

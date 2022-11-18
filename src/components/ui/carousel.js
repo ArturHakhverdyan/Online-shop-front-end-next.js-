@@ -6,16 +6,8 @@ export const Carusel = () => {
   return (
     <div
       id="carouselExampleCaptions"
-      className="carousel slide"
+      className={`carousel slide ${styles.wraperCarusel}`}
       data-bs-ride="carousel"
-      style={{
-        width: "80%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-        backgroundColor: "rgb(220	229	226)",
-      }}
     >
       <div className="carousel-indicators">
         <button
@@ -46,7 +38,7 @@ export const Carusel = () => {
 
 
 
-      <div className="carousel-inner" style={{ display: "flex" }}>
+      <div className={`carousel-inner ${styles.innerBlock}`} style={{ display: "flex" }}>
 
 
 
@@ -60,12 +52,10 @@ export const Carusel = () => {
           <button className={styles.btn} onClick={() => navigate.push("/allProduct/Phones")}>Explore</button>
         </div>
 
-        <div className="carousel-item active" style={{ width: "50%",cursor:"pointer" }} onClick={() => navigate.push("/allProduct/Phones")}>
+        <div className={`carousel-item active ${styles.imgWrapper}`} onClick={() => navigate.push("/allProduct/Phones")}>
           <img
             src="/advertingimg.png"
             className="d-block w-100"
-            width={100}
-            height={500}
           />
           <div className="carousel-caption d-none d-md-block"></div>
         </div>

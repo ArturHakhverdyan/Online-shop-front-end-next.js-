@@ -104,18 +104,14 @@ const SearchPart = () => {
                   <CardBody className={styles.card_body}>
                     <CardTitle
                       tag="h5"
-                      style={{
-                        color: "black",
-                        fontFamily: "Inter",
-                        fontSize: "18px",
-                      }}
+                      className={styles.cardTitle}
                     >
                       {card.name}
                     </CardTitle>
-                    <CardText style={{ fontFamily: "Inter" }}>
+                    <CardText  className={styles.cardText1}>
                       {card.description}
                     </CardText>
-                    <CardText style={{ fontFamily: "Inter" }}>
+                    <CardText  className={styles.cardText1}>
                       {card.price}
                     </CardText>
                   </CardBody>

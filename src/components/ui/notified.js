@@ -12,11 +12,11 @@ const NotifiedPart = () => {
         </p>
       </div>
       <div className={styles.img}>
-        <Image unoptimized='true' src="/sendmail.png" width={233} height={200} />
+        <img unoptimized='true' src="/sendmail.png"  className={styles.sendEmailImg}   />
       </div>
       <div className={styles.input}>
-        <input placeholder="Your email" />
-        <button>Sign up</button>
+        <input  placeholder="Your email" />
+        <button className={styles.signUpBtn}>Sign up</button>
       </div>
     </div>
   );

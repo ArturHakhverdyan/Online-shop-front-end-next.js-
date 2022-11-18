@@ -12,9 +12,9 @@ const Services = () => {
       </div>
 
       <div className={styles.midSection}>
-        <div className={styles.titleBlock}>
-          <p className={styles.midSectionTitle}>Services</p>
-        </div>
+         <div className={styles.titleBlock}>
+           <p className={styles.midSectionTitle}>Services</p>
+         </div>
 
         <div className={styles.cardWrapper}>
           <div className={styles.cardBlock}>
@@ -31,6 +31,8 @@ const Services = () => {
                 all processes carried out during the transportation of goods
                 through the customs authorities.
               </p>
+              <button className={styles.respBtn}>More</button>
+
               <div className={styles.btnBlock}>
                 <button className={`${styles.iconbtn} ${styles.addbtn}`}>
                   <div className={styles.addicon}></div>
@@ -51,6 +53,8 @@ const Services = () => {
                 all processes carried out during the transportation of goods
                 through the customs authorities.
               </p>
+              <button className={styles.respBtn}>More</button>
+
               <div className={styles.btnBlock}>
                 <button className={`${styles.iconbtn} ${styles.addbtn}`}>
                   <div className={styles.addicon}></div>
@@ -62,7 +66,7 @@ const Services = () => {
               <div className={styles.iconBlock}>
                 <img
                   className={styles.iconImg}
-                src="https://img.icons8.com/material-outlined/24/null/electronics.png"
+                  src="https://img.icons8.com/material-outlined/24/null/electronics.png"
                 />
               </div>
               <p className={styles.custom}>Electronics</p>
@@ -71,6 +75,8 @@ const Services = () => {
                 all processes carried out during the transportation of goods
                 through the customs authorities.
               </p>
+              <button className={styles.respBtn}>More</button>
+
               <div className={styles.btnBlock}>
                 <button className={`${styles.iconbtn} ${styles.addbtn}`}>
                   <div className={styles.addicon}></div>
@@ -94,7 +100,7 @@ const Services = () => {
               <div className={styles.callUs}>
                 <div className={styles.numberBlock}>
                   <div className={styles.callIcon} >
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png"  />
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png" />
                   </div>
                   <div>
                     <p className={styles.callText1}>Call Us Now</p>
@@ -103,16 +109,16 @@ const Services = () => {
                 </div>
               </div>
               <div className={styles.mailUs}>
-              <div className={styles.numberBlock}>
+                <div className={styles.numberBlock}>
                   <div className={styles.callIcon} >
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png"  />
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/mac-os.png" />
                   </div>
                   <div>
                     <p className={styles.callText1}>Mail Us Now</p>
                     <p className={styles.callText2} >info@armtransexport.com</p>
                   </div>
                 </div>
-                 </div>
+              </div>
             </div>
           </div>
 

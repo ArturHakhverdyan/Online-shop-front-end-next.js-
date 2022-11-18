@@ -38,7 +38,7 @@ const MostSelledItems = () => {
             <Link key={item._id} href={`MostSelledItems/${item._id}`}>
               <div className={styles.card} onClick={() => check(item._id)}>
                 <div className={styles.cardImg}>
-                  <Image unoptimized='true' src={item.img} width={200} height={200} />
+                  <img unoptimized='true' src={item.img} className={styles.cardPicture} />
                 </div>
                 <div className={styles.itemInfo}>
                   <p className={styles.name}>{item.name}</p>

@@ -1,5 +1,4 @@
 import axios from "axios"
-import Link from "next/link"
 import { forwardRef, useEffect, useState } from "react"
 import CardComponent from "../../../src/components/cardComponent"
 import styles from "../../../styles/Gadjet.module.css"
