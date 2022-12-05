@@ -32,7 +32,7 @@
   border: 1px solid #c7dcfb;
   border-radius: 50rem;
   width: auto;
-  width: 100px;
+  min-width: 100px;
   padding: 5px;
   color: gray;
 }

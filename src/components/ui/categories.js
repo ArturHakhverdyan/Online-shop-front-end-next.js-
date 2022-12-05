@@ -1,18 +1,20 @@
-import Image from "next/image";
 import styles from "../../../styles/Categories.module.css";
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 
 const Categories = () => {
+  const { t } = useTranslation()
+
+
   const navigate = useRouter()
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        <p className={styles.text1}> Shop our latest offers and categories</p>
+        <p className={styles.text1}>{t("common:categoryTitle")}</p>
         <p className={styles.text2}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          in est dui, aliquam,
-          <br /> tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
+          {t("common:categoryDesc1")}
+          <br />
+          {t("common:categoryDesc2")}
         </p>
       </div>
       <div className={styles.categories} >
@@ -22,22 +24,26 @@ const Categories = () => {
               <img unoptimized='true' src="/notebook.png" className={styles.notebookImg} />
             </div>
             <div className={styles.laptopDescBlock}>
-              <p className={styles.laptopName}>Laptops</p>
+              <p className={styles.laptopName}>{t("common:categoryLaptops")}</p>
               <p className={styles.laptopDesc}>
-                True Laptop <br />
-                Solution
+                {t("common:categoryLaptopsDesc1")}
+                <br />
+                {t("common:categoryLaptopsDesc2")}
               </p>
             </div>
           </div>
           <div className={styles.leftSideWatch} onClick={() => navigate.push("//allProduct/Watches")}>
             <div className={styles.watchImg}>
-              <img unoptimized='true' src="/watch.png"className={styles.watchImgimg}/>
+              <img unoptimized='true' src="/watch.png" className={styles.watchImgimg} />
             </div>
             <div className={styles.watchText}>
-              <p className={styles.watchName}>Watch</p>
+              <p className={styles.watchName}>{t("common:categoryWatches")}</p>
               <p className={styles.watchDesc}>
-                Not just <br />
-                stylisht
+                {t("common:categoryWatchDesc1")}
+                <br />
+                {t("common:categoryWatchDesc2")}
+
+
               </p>
             </div>
           </div>
@@ -50,20 +56,26 @@ const Categories = () => {
               <img unoptimized='true' src="/twoPhons.png" className={styles.twoPhonesImg} />
             </div>
             <div className={styles.rigthPhoneText}>
-              <p className={styles.rigthPhoneText1}>Phones</p>
+              <p className={styles.rigthPhoneText1}>{t("common:categoryPhones")}</p>
               <p className={styles.phoneDesc}>
-                Your day to day <br /> life
+                {t("common:categoryPhonesDesc1")}
+                <br />
+                {t("common:categoryPhonesDesc2")}
               </p>
             </div>
           </div>
 
           <div className={styles.ipadSide} onClick={() => navigate.push("/allProduct/Ipads")}>
             <div className={styles.ipadTextBlock}>
-              <p className={styles.ipadText1}>Tablet</p>
-              <p className={styles.IpadDesc}>Empower your <br /> work</p>
+              <p className={styles.ipadText1}>{t("common:categoryTablets")}</p>
+              <p className={styles.IpadDesc}>
+                {t("common:categoryTabletsDesc1")}
+                <br />
+                {t("common:categoryTabletsDesc2")}
+              </p>
             </div>
             <div className={styles.ipadImgBlock}>
-              <img unoptimized='true' src="/ipadd.png" className={styles.ipadImg}   />
+              <img unoptimized='true' src="/ipadd.png" className={styles.ipadImg} />
             </div>
           </div>
         </div>

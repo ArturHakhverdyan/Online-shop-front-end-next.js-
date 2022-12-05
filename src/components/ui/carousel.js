@@ -1,8 +1,11 @@
 import styles from "../../../styles/Adverting.module.css";
 import { useRouter } from 'next/router';
+import  useTranslation  from 'next-translate/useTranslation';
 
 export const Carusel = () => {
   const navigate = useRouter()
+  const { t } = useTranslation()
+
   return (
     <div
       id="carouselExampleCaptions"
@@ -43,13 +46,11 @@ export const Carusel = () => {
 
 
         <div style={{ width: "50%" }}>
-          <p className={styles.text1}>The new phones are here take a look.</p>
+          <p className={styles.text1}>{t("common:AdvTitle")}</p>
           <p className={styles.text2}>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-            in est dui, aliquam, tempor. Faucibus morbi turpis.
+          {t("common:AdvDesc")}
           </p>
-          <button className={styles.btn} onClick={() => navigate.push("/allProduct/Phones")}>Explore</button>
+          <button className={styles.btn} onClick={() => navigate.push("/allProduct/Phones")}>{t("common:AdvBtn")}</button>
         </div>
 
         <div className={`carousel-item active ${styles.imgWrapper}`} onClick={() => navigate.push("/allProduct/Phones")}>

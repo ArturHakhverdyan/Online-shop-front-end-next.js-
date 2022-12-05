@@ -1,12 +1,15 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "../../styles/MostSelledItems.module.css";
 import Link from "next/link";
 import axios from "axios";
+import useTranslation from 'next-translate/useTranslation';
+
 
 const MostSelledItems = () => {
   const [mostSelledItemsData, setMostSelledItemsData] = useState([]);
-  const [state,setState] = useState(false)
+  const [state, setState] = useState(false)
+  const { t } = useTranslation()
+
 
   useEffect(() => {
     axios
@@ -21,15 +24,18 @@ const MostSelledItems = () => {
     el
       ? localStorage.setItem("isToggle", JSON.stringify(true))
       : localStorage.setItem("isToggle", JSON.stringify(false));
-      setState(true)
+    setState(true)
   };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        <p className={styles.text1}>Save on our most selled items.</p>
+        <p className={styles.text1}>
+        {t("common:mostSalledTitle")}
+        </p>
         <p className={styles.text2}>
-          Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+          {t("common:mostSalledDesc")}
+          
         </p>
       </div>
       <div className={styles.cardWrapper}>

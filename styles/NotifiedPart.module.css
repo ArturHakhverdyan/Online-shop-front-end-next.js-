@@ -12,7 +12,8 @@
   align-items: center;
 }
 .text1 {
-  width: 393px;
+  width: auto;
+  
   height: 53px;
   left: calc(50% - 393px / 2 - 0.48px);
   top: 19.45px;
@@ -88,7 +89,7 @@ width: 115px;
     margin-bottom: 30px;
     width: 100%;
     line-height: 70px;  
-    font-size: 60px;
+    font-size: 54px;
   }
   .sendEmailImg{
     width: 100%;
@@ -107,7 +108,7 @@ width: 115px;
   }
   .input button {
     margin-top: 40px;
-    width: 150px;
+    width: 220px;
     height: 150px;
     font-size: 40px;
   }

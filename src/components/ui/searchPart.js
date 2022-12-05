@@ -3,11 +3,13 @@ import { useState } from "react";
 import axios from "axios";
 import { Card, CardBody, CardText, CardTitle } from "reactstrap";
 import { useRouter } from "next/router";
+import  useTranslation  from 'next-translate/useTranslation';
 
 const SearchPart = () => {
   const [searchValue, setSearchValue] = useState("");
   const [loading, setLoading] = useState(false);
   const [searchData, setSearchData] = useState([]);
+  const {t} = useTranslation()
 
   const navigate = useRouter()
 
@@ -59,7 +61,7 @@ const SearchPart = () => {
   return (
     <div className={styles.wrapper} id="1">
       <div className={styles.searchPart}>
-        <p className={styles.text}>Looking for anything else?</p>
+        <p className={styles.text}>{t("common:lookAnything")}</p>
 
         <form onSubmit={Submit} style={{ display: "flex" }}>
           <input

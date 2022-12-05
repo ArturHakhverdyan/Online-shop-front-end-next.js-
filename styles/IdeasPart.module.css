@@ -20,6 +20,7 @@
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
+  
 }
 
 .moreInfo {
@@ -55,6 +56,15 @@
 .ideaText p {
   font-family: Inter;
   font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.ideaText1 p {
+  font-family: Inter;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0em;
@@ -110,6 +120,10 @@
   width: 100%;
 }
 .ideaText p{
+  font-size: 50px;
+  line-height: 70px;
+}
+.ideaText1 p{
   font-size: 50px;
   line-height: 70px;
 }
