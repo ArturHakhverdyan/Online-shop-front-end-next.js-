@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardFooter, CardTitle } from "reactstrap";
 import { CardText } from "reactstrap";
 import styles from "../../../styles/eachElement.module.css";
+import useTranslation from 'next-translate/useTranslation';
+
 
 export async function getServerSideProps(context) {
   const { id, name } = context.params;
@@ -15,7 +17,7 @@ export async function getServerSideProps(context) {
 
 
 const Id = ({ name, id }) => {
-
+  const { t } = useTranslation()
   const [element, setElement] = useState([]);
   const [loading, setLoading] = useState(true);
   const [toggleBasket, setToggleBasket] = useState(false);
@@ -51,20 +53,20 @@ const Id = ({ name, id }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight:"100vh"
+        minHeight: "100vh"
       }}
     >
       {loading ? (
         <div className={styles.loader}>
-          <span>Loading...</span>
+          <span>{t("common:loading")}</span>
         </div>
       ) : (
         <Card
-        className={styles.cards}
-      
+          className={styles.cards}
+
         >
           <div className={styles.imageBlock}>
-            <img src={card.img}  />
+            <img src={card.img} />
           </div>
 
           <CardBody className={styles.bodys}>
@@ -79,17 +81,17 @@ const Id = ({ name, id }) => {
             {foo() ? (
               <Link href={"/basket"}>
                 <a>
-                  <Button color="info" className={styles.btns}> Go To Basket </Button>
+                  <Button color="info" className={styles.btns}>{t("common:goToBasket ")}</Button>
                 </a>
               </Link>
             ) : (
               <a>
                 <Button color="warning" onClick={() => addToBasket()} className={styles.btns}>
-                  Add to Basket
+                {t("common:addToBasket")}
                 </Button>
               </a>
             )}
-            <Button color="success" className={styles.btns} onClick={()=>navigate.push("/contactUs")} >Contact Us</Button>
+            <Button color="success" className={styles.btns} onClick={() => navigate.push("/contactUs")} >{t("common:contact")}</Button>
           </CardFooter>
         </Card>
       )}{" "}

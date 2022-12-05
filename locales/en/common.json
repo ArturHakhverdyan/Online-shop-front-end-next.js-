@@ -126,5 +126,8 @@
     "oldPassword":"Old Password",
     "newPassword":"New Password",
     "confirmNewPassword":"Confirm New Password",
-    "Change":"change"
+    "Change":"change",
+    "more":"More",
+    "goToBasket":"Go To Basket",
+    "addToBasket":"Add to Basket"
 }

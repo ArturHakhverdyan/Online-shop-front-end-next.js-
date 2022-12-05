@@ -126,5 +126,8 @@
     "oldPassword":"Старый пароль",
     "newPassword":"Новый пароль",
     "confirmNewPassword":"Подтвердите новый пароль",
-    "Change":"сдача"
+    "Change":"сдача",
+    "more":"Более",
+    "goToBasket":"Перейти в корзину",
+    "addToBasket":"Добавить в корзину"
 }
